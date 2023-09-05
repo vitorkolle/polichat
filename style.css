@@ -28,10 +28,45 @@ p{
     color: rgb(49, 60, 63);
     margin-left: 12px;
     font-family: 'Roboto Slab', serif;
+    cursor: pointer;
 }
 .menu{
     position: absolute;
     height: 28px;
     right: 20px;
     cursor: pointer;
+}
+
+/* */
+
+.secoes{
+    display: grid;
+    width: 100%;
+    height: 50%;
+}
+.secao{
+    background-color: rgb(173, 78, 78);
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-secao{
+    width: 24px;
+    align-content: center;
+}
+.status{
+   
+    
+}
+.atendimento{
+    font-size: 12px;
+    font-family: 'Roboto Slab', serif;
+}
+.secao-pesquisa{
+    background-color: aqua;
+    width: 100%;
+    height: 30%;
+    
 }
