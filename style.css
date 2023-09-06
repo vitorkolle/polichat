@@ -1,8 +1,11 @@
+/*reset*/
 *{
-    padding: 0;
+padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+/*menu suoerior*/
 .plataforma{
     position: absolute;
     width: 30%;
@@ -37,33 +40,85 @@ p{
     cursor: pointer;
 }
 
-/* */
-
+/*menu de seções do chat*/
 .secoes{
     display: grid;
     width: 100%;
     height: 50%;
+    justify-content: center;
 }
 .secao{
-    background-color: rgb(173, 78, 78);
-    width: 100%;
-    height: 70%;
+    background-color:transparent;
+    width: 28vw;
+    height: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: -24px;
 }
-.img-secao{
-    width: 24px;
+
+/*configuração de cada uma das seções*/
+/*seção 01*/
+.img-secao1{
+    width: 30px;
     align-content: center;
+    margin-left: 48px;
 }
-.status{
-   
-    
+.status1{
+    display: grid;
+    background-color: rgb(222, 235, 247);
+    width: 100%;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
 }
-.atendimento{
+.atendimento1{
     font-size: 12px;
     font-family: 'Roboto Slab', serif;
+    color: rgb(66, 171, 212);
 }
+
+/*seção 02*/
+.img-secao2{
+    width: 24px;
+    align-content: center;
+    margin-left: 8px;
+}
+.status2{
+    display: grid;
+    background-color: rgb(222, 235, 247);
+    width: 100%;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+}
+.atendimento2{
+    font-size: 12px;
+    font-family: 'Roboto Slab', serif;
+   
+}
+
+/*seção 03*/
+.img-secao3{
+    width: 24px;
+    align-content: center;
+    margin-left: 20px;
+}
+.status3{
+    display: grid;
+    background-color: rgb(222, 235, 247);
+    width: 100%;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+}
+.atendimento3{
+    font-size: 12px;
+    font-family: 'Roboto Slab', serif;
+    
+}
+
+/*seção de pesquisa*/
 .secao-pesquisa{
     background-color: aqua;
     width: 100%;
