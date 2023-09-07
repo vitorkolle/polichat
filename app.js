@@ -69,12 +69,15 @@ const criarCards = (info) => {
     
     const nome = document.createElement('h1')
     nome.textContent = info.nome
+    nome.classList.add('nome')
 
     const quantidade = document.createElement('h2')
     quantidade.textContent = info.quantidade
+    quantidade.classList.add('qtd')
 
     const mensagem = document.createElement('span')
     mensagem.textContent = info.mensagem
+    mensagem.classList.add('msg')
 
     const contato = document.createElement('div')
     contato.textContent = info.contato

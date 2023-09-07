@@ -3,6 +3,7 @@
 padding: 0;
     margin: 0;
     box-sizing: border-box;
+    z-index: -2;
 }
 body{
     background-color: black;
@@ -11,8 +12,8 @@ body{
 /*menu suoerior*/
 .plataforma{
     position: absolute;
-    width: 30%;
-    height: 90%;
+    width: 32%;
+    height: 100%;
     background-color: rgb(245, 245, 245);
     right: 65vh;
     top: 28px;
@@ -177,29 +178,85 @@ p{
 }
 /*linha que divide o menu dos chats*/
 hr{
-    margin-top: -25vh;
-    margin-left: 2vh;
+    margin-top: -28vh;
+    margin-left: 4vh;
    width: 28vw;
+   margin-bottom: 12px;
 }
 
 /*estlização dos chats*/
+.container-cards{
+    align-items: center;
+    justify-content: center;
+    padding-inline: 16px;
+    
+}
 .img{
-width: 10px;
-height: 10px;    
+width: 42px;
+height: 42px;    
+border-radius: 50%;
+position: absolute;
+margin-left: 4px;
+margin-top: 2px;
    
 }
 
 .contato-cliente{
+    width: 20%;
+    margin-left: 4vw;
+    margin-bottom: -2vh;
+    background-color: rgb(167, 3, 3);
+    color: rgb(233, 233, 233);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
    
 }
 
 .tempo{    
-   
+    position: absolute;
+    left: 24vw;
+    margin-top: -6vh;
+    margin-right: 1vw;
+    font-size: 12px;
+    font-family: 'Roboto Slab', serif;
+    color: rgb(146, 149, 151);
    
 }
-.p4.p1{
-   
+
+.p1{
+    font-size: 8px;
+    margin-left: 4vw;
+    margin-top: 1vh;
+    display: flex;
+    column-gap: 8px;
+    color:rgb(0, 0, 0);
+    font-family: 'Roboto Slab', serif;
 }
-.card{
+
+.qtd{
+    width: 18px;
+    height: 18px;
+    background-color: rgb(167, 3, 3);
+    color: rgb(233, 233, 233);
+    border-radius: 50%;
+    font-size: 14px;
+    justify-content: end;
+}
+.msg{
+    font-size: 14px;
+    margin-left: 4vw;
+    color:rgb(167, 165, 165);
+    font-family: 'Roboto Slab', serif;
+    z-index: -2;
     
+}
+
+.card{
+    width: 100%;
+    height: 32%;
+    border: .5px solid rgb(102, 102, 102);
+    padding-block: 7px;
+    z-index: -1;
 }
