@@ -7,7 +7,8 @@ const info = [
     mensagem:"Posso realizar o pagamento por...",
     contato: "João Paulo",
     tempo: "Há 30 minutos",
-    quantidade: "1"
+    quantidade: "1",
+    plataforma: "./icones/Whatsapp icon.png"
 
 },
 {
@@ -16,7 +17,9 @@ const info = [
     mensagem:"Márcia diz: Bom dia, como posso ajuda...",
     contato: "Márcia",
     tempo: "Há 30 minutos",
-    quantidade: "1"
+    quantidade: "1",
+    plataforma: "./icones/messager icon.png"
+
 },
 {
     imagem: "./clientes/bruno-adorno.jpg",
@@ -24,7 +27,9 @@ const info = [
     mensagem:"Bom dia, gostaria de saber quant...",
     contato: "Joysi",
     tempo: "Há 30 minutos",
-    quantidade: "1"
+    quantidade: "1",
+    plataforma: "./icones/sms icon.png"
+
 },
 {
     imagem: "./clientes/viviane-ribeiro.jpg",
@@ -32,7 +37,9 @@ const info = [
     mensagem:"Adorei o atendimento, foi nota 10...",
     contato: "Geovana",
     tempo: "Há 30 minutos",
-    quantidade: "1"
+    quantidade: "1",
+    plataforma: "./icones/instagram icon.png"
+
 },
 {
     imagem: "./clientes/maria-joana.jpg",
@@ -40,7 +47,9 @@ const info = [
     mensagem:"Jonathan diz: A senhora precisa de mais a...",
     contato: "Jonathan",
     tempo: "Há 30 minutos",
-    quantidade: "1"
+    quantidade: "1",
+    plataforma: "./icones/Whatsapp icon.png"
+
 },
 {
     imagem: "./clientes/juliana-pereira.jpg",
@@ -48,7 +57,9 @@ const info = [
     mensagem:"Saulo diz: Enviarei o comprovante...",
     contato: "Saulo",
     tempo: "Há 30 minutos",
-    quantidade: "1"
+    quantidade: "1",
+    plataforma: "./icones/instagram icon.png"
+
 },
 {
     imagem: "./clientes/henrique-martins.jpg",
@@ -56,7 +67,9 @@ const info = [
     mensagem:"Joysi diz: Estarei enviando o comprovant...",
     contato: "Joisy",
     tempo: "Há 30 minutos",
-    quantidade: "1"
+    quantidade: "1",
+    plataforma: "./icones/Whatsapp icon.png"
+
 }
 ]
 
@@ -87,6 +100,12 @@ const criarCards = (info) => {
     tempo.textContent = info.tempo
     tempo.classList.add('tempo')
 
+    const plataforma = document.createElement('img')
+    plataforma.src = `./img/${info.plataforma}`
+    plataforma.alt = "plataformas"
+    plataforma.classList.add('plataformas')
+    
+
 
 
 
@@ -102,10 +121,13 @@ const criarCards = (info) => {
     p3.replaceChildren(p1, p2, tempo)
 
     const p4 = document.createElement('div')
-    p4.replaceChildren(imagem, p3, contato)
-    p4.classList.add('card')
+    p4.replaceChildren(plataforma)
+
+    const p5 = document.createElement('div')
+    p5.replaceChildren(imagem, p3, contato, p4)
+    p5.classList.add('card')
     
-    return p4
+    return p5
 }
 
 const mostrarCards = (info) => {
