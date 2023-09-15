@@ -12,8 +12,8 @@ body{
 /*menu suoerior*/
 .plataforma{
     position: absolute;
-    width: 32%;
-    height: 740px;
+    width: 34%;
+    height: 80%;
     background-color: rgb(245, 245, 245);
     right: 65vh;
     top: 28px;
@@ -137,7 +137,7 @@ p{
 /*barra de pesquisa*/
 .pesquisa{
     height: 70%;
-    width: 74%;
+    width: 90%;
     margin-right: 22px;
     background-color: rgb(222, 235, 247);
     
@@ -150,8 +150,8 @@ p{
 }
 /*contatos*/
 .contato{
-    width: 30px;
-    height: 30px;
+    width: 38px;
+    height: 38px;
     margin-right: 16px;
     background-color: rgb(222, 235, 247);
     align-items: center;
@@ -159,36 +159,37 @@ p{
   
 }
 .icon-contato{
-    height: 24px;
+    height: 30px;
     margin-top: 4px;
     margin-left: 3px;
 }
 /*filtrar*/
 .filtro{
-    width: 30px;
-    height: 30px;
+    width: 38px;
+    height: 38px;
     background-color: rgb(222, 235, 247);
     align-items: center;
     justify-content: center;
 }
 .icon-filtro{
-    height: 24px;
+    height: 30px;
     margin-top: 4px;
     margin-left: 3px;
 }
 /*linha que divide o menu dos chats*/
 hr{
-    margin-top: -28vh;
+    margin-top: -22vh;
     margin-left: 4vh;
-   width: 28vw;
-   margin-bottom: 12px;
+   width: 89%;
+   margin-bottom: -38px;
 }
 
 /*estlização dos chats*/
 .container-cards{
     align-items: center;
     justify-content: center;
-    padding-inline: 16px;
+    padding-inline: 32px;
+    padding-block: 64px;
     
 }
 .img{
@@ -204,7 +205,7 @@ margin-top: 2px;
 .contato-cliente{
     width: 20%;
     margin-left: 4vw;
-    margin-bottom: -5vh;
+    margin-top: .8vh;
     background-color: rgb(226, 4, 4);
     color: rgb(233, 233, 233);
     border-radius: 10px;
@@ -215,9 +216,8 @@ margin-top: 2px;
 
 .tempo{    
     position: absolute;
-    left: 24vw;
-    margin-top: -7vh;
-    margin-right: 1.2vw;
+    left: 25vw;
+    margin-top: -5vh;
     font-size: 12px;
     font-family: 'Roboto Slab', serif;
     color: rgb(146, 149, 151);
@@ -227,7 +227,7 @@ margin-top: 2px;
 .p1{
     font-size: 8px;
     margin-left: 4vw;
-    margin-top: 1vh;
+    margin-top: vh;
     display: flex;
     column-gap: 8px;
     color:rgb(0, 0, 0);
@@ -257,12 +257,14 @@ margin-top: 2px;
     width: 100%;
     height: 70px;
     border: .5px solid rgb(102, 102, 102);
-    padding-block: 7px;
+    padding-block: 12px;
     cursor: pointer;
 }
 .plataformas{
+    position: absolute;
+    width: 36px;
     height: 36px;
-    margin-left: 380px;
-    margin-top: -10px;
+    left: 30.2vw;
+    margin-top: -56px;
     
 }
